@@ -2,8 +2,8 @@ import numpy as np
 import random
 from typing import Tuple, List
 
-def generate_blocks() -> Tuple[List[Tuple[int, int]], List[Tuple[int, int]], List[Tuple[int, int]], List[Tuple[Tuple[int, int], Tuple[int, int]]]]:
-    width, height = 630, 630
+def generate_blocks(map_width, map_height) -> Tuple[List[Tuple[int, int]], List[Tuple[int, int]], List[Tuple[int, int]], List[Tuple[Tuple[int, int], Tuple[int, int]]]]:
+    width, height = map_width, map_height
         
     occupied = np.zeros((height, width), dtype=bool)
     
